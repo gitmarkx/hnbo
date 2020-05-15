@@ -1,0 +1,2893 @@
+   @media (min-width: 992px) {  // goodlifekaigo navigation animation
+
+    $lightcolor1: #FFFF;
+
+       // NAVBAR CSS
+    .navbar{
+        // background-color: #ffffff;
+        // border-bottom: 1px solid $lightcolor1;
+
+        .navbar-brand{
+            img{
+                width: 100px;
+            }
+        }
+        
+        .navbar-toggler{
+            font-size: 2rem;
+            i{
+                color: $lightcolor1;
+            }
+
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        .custom-nav{
+            .nav-item{
+                padding: 0 10px;
+                position: relative;
+                
+                .nav-link{
+                    text-align: center;
+                    font-size: 14px;   
+
+                    &::after{
+                        content: "";
+                        background-color: $lightcolor1;
+                        width: 0;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 10px;
+                        transition: .2s;
+                    }
+
+                    &:hover::after{
+                        width: calc(100% - 20px);
+                    }
+
+                    p{
+                        margin-bottom: 0;
+
+
+                        &:first-child{
+                            color: $lightcolor1;
+                        }
+
+                        &:last-child{
+                            color: $lightcolor1;
+                            font-size: 10px;
+                        }
+                    }
+                }
+                .n_l{
+                    &::after{
+                        content: "";
+                        background-color: #FFB000;
+                        width: 0;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 10px;
+                        transition: .2s;
+                    }
+
+                    &:hover::after{
+                        width: calc(100% - 20px);
+                    }
+                    p{
+                        margin-bottom: 0;
+
+
+                        &:first-child{
+                            color:#FFB000;
+                        }
+
+                        &:last-child{
+                            color: #FFB000;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // END OF NAVBAR CSS
+   }
+   // MARK UPDATED FOR MOBILE VIEW
+    @media screen and (min-width:320px) and  (max-width:375px){
+        // TOP SECTION
+        .top-section{
+            .container-fluid{
+                .row{
+                    .col-sm-12{
+                        h1{
+                            font-size: 1.8rem;
+                            margin-top: 10px;
+                        }
+                        p{
+                            font-size: .9rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+            }
+        }
+        //SCROLL TO TOP
+        .scrolltotop{
+            display:none;
+            position: fixed;    
+            bottom: 0;
+            right: 0;
+            padding: 10px 20px;
+
+            background-color: #2390AE;
+            i{
+                color: #fff;
+            }
+            
+            &:hover{
+                background-color: #3a9cb8;
+            }
+        }
+
+        //CALL US NOW BUTTON
+        .call-us-now-fixed{
+            display: inline;
+            position: fixed;
+            bottom: 3.2rem;
+            right: 0;
+            z-index: 9999;
+            background-color: #FFB000;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            padding: 15px 18px;
+
+            i{
+                color: #fff;
+                font-size: 24px;
+            }
+
+            // p{
+            //     font-size: 13px;
+            //     margin-bottom: 0;
+
+            //     text-decoration: none;
+            //     color: #FFFFFF;
+            // }
+
+            &:hover{
+                background-color: #daa564;
+            }
+        }
+        //END OF CALL US NOW BUTTON
+
+        // MANAGEMENT SECTION
+        .managementConcerns{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .container{
+                .section-head{
+                    margin-bottom: 10px; 
+                    padding: 30px 0px;
+
+                   .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+                }
+                
+                .row{
+                    .col-sm-12{
+                        padding-left: 0;
+                        padding-right: 0;
+                        .concern{
+                            h1{
+                                font-size: 25px;
+                                font-weight: 700;
+                                padding: 48px 25px;
+                                color: #f7f7f7;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF MANAGEMENT SECTION
+
+        // SERVICES SECTION
+        .services-new {
+            background: none;
+            padding: 0;
+
+            .section-head{
+                padding: 25px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                }
+                h1{
+                    font-size: 1rem;
+                    text-align:center;
+                }
+                p{
+                    font-size: .9rem;
+                    text-align: left;
+                }
+            }
+
+            .newService{
+                .s_1{
+                    p{
+                        text-align: left;
+                        padding-bottom: 24.3px;
+                        margin: 30px 20px;
+                    }
+                }
+            }
+        }
+        // END OF SERVICES SECTION
+
+        // CONSULTATION SECTION
+        .consultation-section{
+            background:none;
+            .container-fluid{
+                .section-head-fc {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 50px;
+                    padding-top: 80px;
+
+                    .sh_p{
+                        font-size:1.6rem; 
+                        padding:0; 
+                        margin:0; 
+                        text-align:center;
+                        //#2390AE
+                        }
+                        h1{
+                            font-size: 1rem;
+                            text-align:center;
+                        }
+                        p{
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                }
+            }
+        }
+        // END OF CONSULTATION SECTION
+
+        // TESTIMONIAL SECTION
+        .testimonial-section{
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+        }
+        // END OF TESTIMONIAL SECTION
+
+        // ABOUT US SECTION
+        .aboutUs{
+            .section-head-1{
+                margin-bottom: 30px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+
+            .container{
+                .ab_h3{
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #0000;
+                    background-size:100%;
+                    padding-left:15px;
+                }
+                .h2-history{
+                    padding-left: 15px;
+                    
+                }
+                .row{
+                    .col-sm-12{
+                        .p1{
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                        }
+                        .p2{
+                            padding-top: 0;
+                            padding-bottom: 30px;
+                            font-size: 13px;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF ABOUT US SECTION
+
+        // MEET THE TEAM SECTION
+        .meetTheTeam{
+            margin-top: 0;
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 25px;
+                padding-right: 25px;
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: center;
+                    }
+            }
+        }
+        // END OF MEET THE TEAM SECTION
+
+        // RECAPTCHA AND CONTACT US 
+        .map{
+            .container-fluid{
+                padding-left: 0;
+                padding-right: 0;
+                .row{
+                    .col-lg-8{
+                        .mapouter{
+                            height: 300px;
+                        }
+                    }
+                    .col-lg-4{
+                        .info{
+                            margin: 10px 0;
+
+                            .info-address{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .mapp{
+            .ContactUs{
+                .C-form{
+                    .container{
+                        width: auto;
+                        .row{
+                            .col-sm-12{
+                                padding-left: 0;
+                                padding-right: 0;
+                                .contact-header{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .g-recaptcha {
+            display: flex;
+            justify-content: start;
+        }
+        // END OF RECAPTCHA AND CONTACT US
+
+
+        // CSS FOR OTHER PAGES
+            // SERVICES CSS
+            .services{
+                .container-fluid-s{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF SERVICES CSS
+            // ABOUT US CSS
+            .aboutUs2{
+                .container-fluid{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                .ab_h3{
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #0000;
+                    background-size:100%;
+                    padding-left:15px;
+                }
+            }
+
+            .container{
+                .row{
+                    .col-sm-12{
+                        // padding-left: 0;
+                        // padding-right: 0;
+                        .p2{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            // END OF ABOUT US CSS
+            // MEET THE TEAM CSS
+            .container-fluid{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .container{
+                .row{
+                    .col-sm-12{
+                        .card{
+                            .card-body{
+                                padding: 1.25rem 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF MEET THE TEAM CSS
+            // CONTACT US CSS
+            .container-fluid-c{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            .NxtCnt{
+                .ContactUs{
+                    .C-form{
+                        .container{
+                            width: auto;
+                            .row{
+                                .col-sm-12{
+                                    padding-top: 30px;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    h6{
+                                        font-size: 18px;
+                                    }
+
+                                    .iagree{
+                                        padding: 80px 0 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // END OF CONTACT US CSS
+        // END OF CSS FOR OTHER PAGES
+    }
+
+    @media screen and (min-width:375px ) and (max-width:425px){
+        // TOP SECTION
+        .top-section{
+            .container-fluid{
+                .row{
+                    .col-sm-12{
+                        p{
+                            font-size: .9rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+            }
+        }
+        //SCROLL TO TOP
+        .scrolltotop{
+            display:none;
+            position: fixed;    
+            bottom: 0;
+            right: 0;
+            padding: 9.4px 20px;
+
+            background-color: #2390AE;
+            i{
+                color: #fff;
+            }
+            
+            &:hover{
+                background-color: #3a9cb8;
+            }
+        }
+
+        //CALL US NOW BUTTON
+        .call-us-now-fixed{
+            display: inline;
+            position: fixed;
+            bottom: 3.2rem;
+            right: 0;
+            z-index: 9999;
+            background-color: #FFB000;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            padding: 15px 18px;
+
+            i{
+                color: #fff;
+                font-size: 24px;
+            }
+
+            // p{
+            //     font-size: 13px;
+            //     margin-bottom: 0;
+
+            //     text-decoration: none;
+            //     color: #FFFFFF;
+            // }
+
+            &:hover{
+                background-color: #daa564;
+            }
+        }
+        //END OF CALL US NOW BUTTON
+
+        // MANAGEMENT SECTION
+        .managementConcerns{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .container{
+                .section-head{
+                    margin-bottom: 10px; 
+                    padding: 30px 0px;
+
+                        .sh_p{
+                        font-size:2rem; 
+                        padding:0; 
+                        margin:0; 
+                        text-align:center;
+                        //#2390AE
+                        }
+                        h1{
+                            font-size: 1rem;
+                            text-align:center;
+                        }
+                        p{
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                }
+                
+                .row{
+                    .col-sm-12{
+                        padding-left: 0;
+                        padding-right: 0;
+                        .concern{
+                            h1{
+                                font-size: 25px;
+                                font-weight: 700;
+                                padding: 48px 25px;
+                                color: #f7f7f7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF MANAGEMENT SECTION
+
+        // SERVICES SECTION
+        .services-new {
+            background: none;
+            padding: 0;
+
+            .section-head{
+                padding: 25px;
+                text-align: center;
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+                
+            }
+
+            .newService{
+                .s_1{
+                    p{
+                        text-align: left;
+                        padding-bottom: 24.3px;
+                        margin: 30px 20px;
+                    }
+                }
+            }
+        }
+        // END OF SERVICES SECTION
+
+        // CONSULTATION SECTION
+        .consultation-section{
+            .container-fluid{
+                .section-head-fc {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 50px;
+                    padding-top: 80px;
+
+                    .sh_p{
+                        font-size:1.9rem; 
+                        padding:0; 
+                        margin:0; 
+                        text-align:center;
+                        //#2390AE
+                        }
+                        h1{
+                            font-size: 1rem;
+                            text-align:center;
+                        }
+                        p{
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                }
+            }
+        }
+        // END OF CONSULTATION SECTION
+
+        // TESTIMONIAL SECTION
+        .testimonial-section{
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+        }
+        // END OF TESTIMONIAL SECTION
+
+        // ABOUT US SECTION
+        .aboutUs{
+            .section-head-1{
+                margin-bottom: 30px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+
+            .container{
+                .h2-history{
+                    padding-left: 15px;
+                }
+                .row{
+                    .col-sm-12{
+                        .p1{
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                        .p2{
+                            padding-top: 0;
+                            padding-bottom: 30px;
+                            font-size: 14px;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF ABOUT US SECTION
+
+        // MEET THE TEAM SECTION
+        .meetTheTeam{
+            margin-top: 0;
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 25px;
+                padding-right: 25px;
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: center;
+                    }
+            }
+        }
+        // END OF MEET THE TEAM SECTION
+
+        // RECAPTCHA AND CONTACT US 
+        .map{
+            .container-fluid{
+                padding-left: 0;
+                padding-right: 0;
+                .row{
+                    .col-lg-8{
+                        .mapouter{
+                            height: 300px;
+                        }
+                    }
+                    .col-lg-4{
+                        .info{
+                            margin: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mapp{
+            .ContactUs{
+                .C-form{
+                    .container{
+                        width: auto;
+                        .row{
+                            .col-sm-12{
+                                padding-left: 0;
+                                padding-right: 0;
+                                .contact-header{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .g-recaptcha {
+            display: flex;
+            justify-content: start;
+        }
+        // END OF RECAPTCHA AND CONTACT US
+
+        // CSS FOR OTHER PAGES
+            // SERVICES CSS
+            .services{
+                .container-fluid-s{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF SERVICES CSS
+            // ABOUT US CSS
+            .aboutUs2{
+                .container-fluid{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF ABOUT US CSS
+            // MEET THE TEAM CSS
+            .container-fluid{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .container{
+                .row{
+                    .col-sm-12{
+                        .card{
+                            .card-body{
+                                padding: 1.25rem 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF MEET THE TEAM CSS
+            // CONTACT US CSS
+            .container-fluid-c{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .NxtCnt{
+                .ContactUs{
+                    .C-form{
+                        .container{
+                            .row{
+                                .col-sm-12{
+                                    h6{
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF CONTACT US CSS
+        // END OF CSS FOR OTHER PAGES
+    }
+
+    @media screen and (max-width:426px) and (min-width:376px){
+        // TOP SECTION
+        .top-section{
+            .container-fluid{
+                .row{
+                    .col-sm-12{
+                        h1{
+                            font-size: 2rem;
+                            margin-top: 10px;
+                        }
+                        p{
+                            font-size: .9rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+            }
+        }
+        //SCROLL TO TOP
+        .scrolltotop{
+            display:none;
+            position: fixed;    
+            bottom: 0;
+            right: 0;
+            padding: 10px 20px;
+
+            background-color: #2390AE;
+            i{
+                color: #fff;
+            }
+            
+            &:hover{
+                background-color: #3a9cb8;
+            }
+        }
+
+        //CALL US NOW BUTTON
+        .call-us-now-fixed{
+            display: inline;
+            position: fixed;
+            bottom: 3.2rem;
+            right: 0;
+            z-index: 9999;
+            background-color: #FFB000;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            padding: 15px 18px;
+
+            i{
+                color: #fff;
+                font-size: 24px;
+            }
+
+            // p{
+            //     font-size: 13px;
+            //     margin-bottom: 0;
+
+            //     text-decoration: none;
+            //     color: #FFFFFF;
+            // }
+
+            &:hover{
+                background-color: #daa564;
+            }
+        }
+        //END OF CALL US NOW BUTTON
+
+        // MANAGEMENT SECTION
+        .managementConcerns{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .container{
+                .section-head{
+                    margin-bottom: 10px; 
+                    padding: 30px 0px;
+
+                    .sh_p{
+                        font-size:2rem; 
+                        padding:0; 
+                        margin:0; 
+                        text-align:center;
+                        //#2390AE
+                        }
+                        h1{
+                            font-size: 1rem;
+                            text-align:center;
+                        }
+                        p{
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                }
+                
+                .row{
+                    .col-sm-12{
+                        padding-left: 0;
+                        padding-right: 0;
+                        .concern{
+                            h1{
+                                font-size: 25px;
+                                font-weight: 700;
+                                padding: 48px 25px;
+                                color: #f7f7f7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF MANAGEMENT SECTION
+
+        // SERVICES SECTION
+        .services-new {
+            background: none;
+            padding: 0;
+
+            .section-head{
+                padding: 25px;
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+                
+            }
+
+            .newService{
+                .s_1{
+                    p{
+                        text-align: left;
+                        padding-bottom: 24.3px;
+                        margin: 30px 20px;
+                    }
+                }
+            }
+        }
+        // END OF SERVICES SECTION
+
+        // CONSULTATION SECTION
+        .consultation-section{
+            background:none;
+            .container-fluid{
+                .section-head-fc {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 50px;
+                    padding-top: 80px;
+
+                    .sh_p{
+                        font-size:2rem; 
+                        padding:0; 
+                        margin:0; 
+                        text-align:center;
+                        //#2390AE
+                        }
+                        h1{
+                            font-size: 1rem;
+                            text-align:center;
+                        }
+                        p{
+                            font-size: .9rem;
+                            text-align: left;
+                        }
+                }
+            }
+        }
+        // END OF CONSULTATION SECTION
+
+        // TESTIMONIAL SECTION
+        .testimonial-section{
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+        }
+        // END OF TESTIMONIAL SECTION
+
+        // ABOUT US SECTION
+        .aboutUs{
+            .section-head-1{
+                margin-bottom: 30px;
+
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: left;
+                    }
+            }
+
+            .container{
+                .ab_h3{
+                    padding-left:15px;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #0000;
+                    background-size:100%;
+                }
+                .h2-history{
+                    padding-left: 15px;
+                }
+                .row{
+                    .col-sm-12{
+                        .p1{
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                        .p2{
+                            padding-top: 0;
+                            padding-bottom: 30px;
+
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // END OF ABOUT US SECTION
+
+        // MEET THE TEAM SECTION
+        .meetTheTeam{
+            margin-top: 0;
+            .section-head{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 25px;
+                padding-right: 25px;
+                .sh_p{
+                    font-size:2rem; 
+                    padding:0; 
+                    margin:0; 
+                    text-align:center;
+                    //#2390AE
+                    }
+                    h1{
+                        font-size: 1rem;
+                        text-align:center;
+                    }
+                    p{
+                        font-size: .9rem;
+                        text-align: center;
+                    }
+            }
+        }
+        // END OF MEET THE TEAM SECTION
+
+        // RECAPTCHA AND CONTACT US 
+        .map{
+            .container-fluid{
+                padding-left: 0;
+                padding-right: 0;
+                .row{
+                    .col-lg-8{
+                        .mapouter{
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mapp{
+            .ContactUs{
+                .C-form{
+                    .container{
+                        width: auto;
+                        .row{
+                            .col-sm-12{
+                                padding-left: 0;
+                                padding-right: 0;
+                                .contact-header{
+                                    font-size: 28px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .g-recaptcha {
+            display: flex;
+            justify-content: start;
+        }
+        // END OF RECAPTCHA AND CONTACT US
+
+        // CSS FOR OTHER PAGES
+            // SERVICES CSS
+            .services{
+                .container-fluid-s{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF SERVICES CSS
+            // ABOUT US CSS
+            .aboutUs2{
+                .container-fluid{
+                    .jumbotron{
+                        .container{
+                            h1{
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                .ab_h3{
+                    padding-left:15px;
+
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: #0000;
+                    background-size:100%;
+                }
+            }
+            // END OF ABOUT US CSS
+            // MEET THE TEAM CSS
+            .container-fluid{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .container{
+                .row{
+                    .col-sm-12{
+                        .card{
+                            .card-body{
+                                padding: 1.25rem 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF MEET THE TEAM CSS
+            // CONTACT US CSS
+            .container-fluid-c{
+                .jumbotron{
+                    .container{
+                        h1{
+                            font-size: 32px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            .NxtCnt{
+                .ContactUs{
+                    .C-form{
+                        .container{
+                            width: auto;
+                            .row{
+                                .col-sm-12{
+                                    h6{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // END OF CONTACT US CSS
+        // END OF CSS FOR OTHER PAGES
+    }
+
+    @media screen and (max-width: 950px){
+        .footer-2{
+            .container{
+                width: auto;
+                padding: 0;
+
+                .footer-top{
+                    padding: 50px 0 30px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        .footer-2{
+            position: relative;
+            .container{
+                width: auto;
+                padding: 0;
+
+                .footer-top{
+                    padding: 50px 20px 30px;
+
+                    .item{
+                        width: 100%;
+                        height: 125px;
+                    }
+                }
+            }
+
+            .container-fluid{
+                .nav{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    // END OF MARK UPDATE
+    
+    @media screen and (max-width:426px ) and (min-width:320px){
+        .row{
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .services{
+            .s_showDesktop{
+                display:none;
+            }
+            .s_showMobile{
+                display: contents;
+            }
+        }
+
+        .top-section{
+            .container-fluid{
+                .row{
+                    margin-bottom: 50px;
+                }
+
+                .services-images{
+                    padding-bottom: 100px;
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 23px;
+                background: url('../assets/images/top-after.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: -1px;
+                z-index:1;
+            }
+        }
+
+        .footer{
+            .container-footer{
+                .container-fluid{
+                    flex-direction: column;
+                    align-items: center;
+
+                    .footer-logo{
+                        margin-bottom: 50px;
+                    }
+
+                    .footer-text{
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                // .copyright{
+                //     p{
+                        
+                //     }
+                // }
+            }
+        }
+
+    }
+    
+    @media screen and (max-width:1023px) and (min-width:320px){
+    
+        //Privacy Policy
+        .privacy_policy{
+            padding:0px;
+            .container{
+                text-align: justify;
+                .row{
+                    .col{
+                        font-size:14px;
+                        .title_h{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .ContactUs{
+            .social{
+                .cntUs_img{
+                    display:none;
+                }
+            }
+        }
+        
+    }
+    
+    //CHINO 
+    @media screen and (min-width:320px) and (max-width:991px){
+        //Map
+    .mapp{
+        .ContactUs{
+            position: relative;
+            .C-form{
+                position: relative;
+                margin-left: 0px;
+                .container{
+                    border-radius: 4px;
+                    .row{
+                        // background:linear-gradient(rgba(0, 175, 225, 0.9)0%,
+                        // rgba(3, 76, 97, 0.8) 50%,
+                        // rgba(18, 114, 141, 0.9) 100%);
+                        background-repeat: no-repeat;
+                        padding:0px 0px;
+                        .col-lg-6 , .col-md-12, .col-sm-12{
+                        color: #f7f7f7;
+                        padding-top: 30px;
+                        // padding-left: 15px;
+                        padding-bottom: 30px;
+                        .oof{
+                            padding-bottom: 20px;
+                        }
+                        .num{
+                            padding-bottom: 50px;
+                            border-bottom: 2px solid rgba(247, 247, 247, 0.6);
+                        }
+                        .icon{
+                            float: left;
+                            padding-right: 40px;
+                            padding-left: 40px;
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                        input[type=text]{
+                            width: 100%;
+                            border-radius: 5px;
+                            padding: 5px;
+                            margin: 10px 0px;
+                            resize: none;
+                            height: 40px;
+                            box-shadow: 0 4px 8px 0 
+                            rgba(0, 0, 0, 0.2),
+                            0 6px 20px 0 
+                            rgba(0, 0, 0, 0.19);
+                            }
+                        input[type=submit]{
+                            border-radius: 5px;
+                            padding: 8px 25px;
+                            float: right;
+                            margin: 30px 0px 10px;
+                            resize: none;
+                            box-shadow: 0 4px 8px 0 
+                          rgba(0, 0, 0, 0.2),
+                            0 6px 20px 0 
+                          rgba(0, 0, 0, 0.19);
+                            }
+                        textarea{
+                            width: 100%;
+                            border-radius: 5px;
+                            padding: 5px;
+                            resize: none;
+                            box-shadow: 0 4px 8px 0 
+                          rgba(0, 0, 0, 0.2),
+                            0 6px 20px 0 
+                          rgba(0, 0, 0, 0.19);
+                        }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+    
+    @media (min-width:769px) and (max-width:1024px){
+
+        // your code
+        .aboutUs{
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                        h2{
+                            padding-top: 186px;
+                        }
+                        .ceo-t{
+                            display:none;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 56px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                        }
+                        
+                    }
+                    .col-lg-2{
+                        p{
+                            padding-top: 10px;
+                        }
+                    }
+                    .col-lg-10{
+                        p{
+                            padding-top: 10px;
+                            margin-right: 65%;
+                        }
+                    }
+                    .col-lg-6 .p{
+                        margin-top: 20%;
+                    }
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 20px;
+                    
+                }
+                .office{
+                    top: 1200px;
+                    z-index: -1;
+                    max-width: 100%;
+                    width: 500px;
+                    height: auto;
+                    position: absolute;
+                    //02-12-2020 margin-left: to 208 px . by chaimel
+                    margin-left: 450px;
+                    background-color:#f7f7f7;
+                }
+                .opis{
+                    display: none;
+                }
+        }
+        .aboutUs2{
+            margin: 0;
+           
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                        h2{
+                            padding-top: 186px;
+                        }
+                        .ceo-t{
+                            display:none;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 56px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 250px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 10px;
+                            width: 480px;
+                            height: 500px;
+                        }
+                        
+                    }
+                    .col-lg-2{
+                        p{
+                            padding-top: 10px;
+                        }
+                    }
+                    .col-lg-10{
+                        p{
+                            padding-top: 10px;
+                            margin-right: 65%;
+                        }
+                    }
+                    .col-lg-6 .p{
+                        margin-top: 20%;
+                    }
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 20px;
+                    
+                }
+                .office{
+                    top: 2145px;
+                    z-index: -1;
+                    max-width: 100%;
+                    width: 500px;
+                    height: auto;
+                    position: absolute;
+                    //02-12-2020 margin-left: to 208 px . by chaimel
+                    margin-left: 450px;
+                    background-color:#f7f7f7;
+                }
+                .opis{
+                    display: none;
+                }
+                .corp{
+                    padding-top: 10px;
+                    text-align: center;
+            
+                }
+                .container2{
+                    margin: 0 auto;
+                    width: 60%;
+                    padding-top: 10px;
+                    .table{
+            
+                        tbody{
+                            
+                            tr{
+                                .t1{
+                                    padding-left: 50px;
+                                    
+                                }
+                                .t2{
+                                    padding-left: 50px;
+                                }
+                                border-bottom: #dee2e6 solid 1px;
+                            }
+                        }
+                    }
+                }
+        }
+        .meetTheTeam{
+            position: relative;
+            margin-top: 129px;
+            .container-fluid{
+                padding-bottom: 20px;
+                
+                width: 100%;
+                    .owl-carousel{
+                        width: 100%;
+                        .item{
+                            padding: 5px;
+                            width: 270px;
+                            height: 350px;
+                            .card{
+                                background-color:#0000;
+                                width: initial;
+                                height: 400px;
+                               border: none;
+                                .view{
+                                    position: relative;
+                                    .mask{
+                                        z-index: 1;
+                                        position: absolute;
+                                        overflow: hidden;
+                                       // left: 60px;
+                                        top: -200px;
+                                        display: none;
+                                        padding: 15px;
+                                        .p2{
+                                            text-align: justify;
+                                           padding: 10px;
+                                            font-size: 13px;
+                                        }
+                                        
+                                    }
+                                }
+                                .t_img{
+                                    
+                                    width: 100%;
+                                    height: 350px;
+                                    margin: 0 auto;
+                                    object-fit: contain;
+                                   
+                                    .question{
+                                        width: 100px; 
+                                        height:150px; 
+                                        margin: 0 auto;
+                                    }
+                                 }
+                                 h2{
+                                    text-align: center;
+                                }
+                                p{
+                                    // z-index: 1;
+                                    // position: absolute;
+                                    text-align: center;
+                                    font-style: bold;
+                                    font-size: 20px;
+                                }
+                                .apply{
+                                    text-align: center;
+                                    margin-top: 44px;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .card-1:hover{
+                               .t_img{
+                                    overflow: visible;
+                                   opacity: 10%;
+                               }
+                               .mask{
+                                opacity: 1;
+                                display: initial;
+                                transform: translateY(-100px);
+                                
+                                transition: all 0.2s ease-in-out;
+                                
+                               }
+                               
+                            }
+                        }
+                    }
+                    
+            }
+            .path{
+                width: 100%;
+                position: absolute;
+                // z-index: -1;
+                top: 300px;
+            }
+            padding-bottom: 110px;
+        }
+        .testimonial-section{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            position: relative;
+        
+            .container{
+                .owl-carousel{
+                   width: 50%;
+                   margin: 0 auto;
+                    .item{
+                        border: 1px solid rgba(112, 112, 112, .3);
+                        background-color: #FFFFFF;
+                        height: 500px;
+                        width: 455px;
+                       
+                        // padding: 5px;
+
+                      
+                        margin: 0 5px;
+
+                        text-align: center;
+                        .customer-voice{
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        p{
+                            padding:0px 30px;
+                            text-align: justify;
+                            text-justify: inter-word;
+                            line-height: 1.5rem;
+                            
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: url('../assets/images/testimonial-rec.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+            }
+            padding-bottom: 100px;
+        }
+    }
+    @media (min-width:426px) and (max-width:768px){
+        .aboutUs{
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+
+                        h2{
+                            padding-top: 85px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width:25%;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                }
+                
+        }
+
+        .aboutUs2{
+            margin: 0;
+           
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+
+                        h2{
+                            padding-top: 85px;
+                            font-size:1.9rem;
+                            text-align: center;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width:25%;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                    display: block;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                }
+                .corp{
+                    padding-top: 10px;
+                    text-align: center;
+            
+                }
+                .container2{
+                    margin: 0 auto;
+                    width: 65%;
+                    padding-top: 10px;
+                    .table{
+            
+                        tbody{
+                            
+                            tr{
+                                .t1{
+                                    padding-left: 50px;
+                                    
+                                }
+                                .t2{
+                                    padding-left: 50px;
+                                }
+                                border-bottom: #dee2e6 solid 1px;
+                            }
+                        }
+                    }
+                }
+                
+        }
+        .meetTheTeam{
+            position: relative;
+            margin-top: 129px;
+           
+            .path{
+                width: 100%;
+                position: absolute;
+                // z-index: -1;
+                top: 346px;
+            }
+            padding-bottom: 110px;
+        }
+        .modal{
+            .modal-body{
+                .row{
+                    .col-lg-6{
+                        .image{
+                            width: 100%;
+                            height: auto;
+                            padding: 20px;
+                        }
+                        h2{
+                            padding-top: 50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .testimonial-section{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            position: relative;
+        
+            .container{
+                .owl-carousel{
+                   width: 50%;
+                   margin: 0 auto;
+                    .item{
+                        border: 1px solid rgba(112, 112, 112, .3);
+                        background-color: #FFFFFF;
+                        height: 600px;
+                        width: 340px;
+                       
+                        // padding: 5px;
+
+                      
+                        margin: 0 5px;
+
+                        text-align: center;
+                        .customer-voice{
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        p{
+                            padding:0px 30px;
+                            text-align: justify;
+                            text-justify: inter-word;
+                            line-height: 1.5rem;
+                            
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: url('../assets/images/testimonial-rec.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+            }
+            padding-bottom: 100px;
+        }
+    }
+    
+    @media (min-width:376px) and (max-width:426px){
+        .meetTheTeam{
+            position: relative;
+            margin-top: 129px;
+           
+            .path{
+                width: 100%;
+                position: absolute;
+                // z-index: -1;
+                top: 470px;
+            }
+            padding-bottom: 110px;
+        }
+        .aboutUs{
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                       
+                        h2{
+                            padding-top: 28px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 200px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 400px;
+                    margin: 0 auto;
+                    display: block;
+                }
+        }
+         //ABOUT US
+         .aboutUs2{
+            margin: 0;
+           
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                       
+                        h2{
+                            padding-top: 28px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 200px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                    padding-left: 15px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 400px;
+                    margin: 0 auto;
+                    display: block;
+                }
+                .corp{
+                    padding-top: 10px;
+                    text-align: center;
+            
+                }
+                .container2{
+                    margin: 0 auto;
+                    width: 95%;
+                    padding-top: 10px;
+                    .table{
+            
+                        tbody{
+                            
+                            tr{
+                                .t1{
+                                    padding-left: 30px;
+                                    
+                                }
+                                .t2{
+                                    padding-left: 50px;
+                                }
+                                border-bottom: #dee2e6 solid 1px;
+                            }
+                        }
+                    }
+                }
+        }
+        .testimonial-section{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            position: relative;
+        
+            .container{
+                .owl-carousel{
+                   width: 100%;
+                   margin: 0 auto;
+                    .item{
+                        border: 1px solid rgba(112, 112, 112, .3);
+                        background-color: #FFFFFF;
+                        height: auto;
+                        width: 385px;
+                       
+                        // padding: 5px;
+
+                      
+                        margin: 0 5px;
+
+                        text-align: center;
+                        .customer-voice{
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        p{
+                            padding:0px 30px;
+                            text-align: justify;
+                            text-justify: inter-word;
+                            line-height: 1.5rem;
+                            
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: url('../assets/images/testimonial-rec.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+            }
+            padding-bottom: 100px;
+        }
+        
+    }
+    @media (min-width:321px) and (max-width:375px){
+        .meetTheTeam{
+            position: relative;
+            // margin-top: 129px;
+           
+            .path{
+                width: 100%;
+                position: absolute;
+                // z-index: -1;
+                top: 470px;
+            }
+            padding-bottom: 110px;
+        }
+        .modal{
+            .modal-body{
+                .row{
+                    .col-lg-6{
+                        .image{
+                            width: 330px;
+                            height: auto;
+                            padding: 20px;
+                            margin: 0 auto;
+                        }
+                        h2{
+                            padding-top: 50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .aboutUs{
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                       
+                        h2{
+                            padding-top: 20px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 200px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 300px;
+                    margin: 0 auto;
+                    display: block;
+                }
+        }
+
+        .aboutUs2{
+            margin: 0;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    .col-lg-6 {
+                        h2{
+                            padding-top: 20px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 200px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                    }
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+                    padding-bottom: 30px;
+                    padding-left: 15px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 300px;
+                    margin: 0 auto;
+                    display: block;
+                }
+                .corp{
+                    padding-top: 10px;
+                    text-align: center;
+            
+                }
+                .container2{
+                    margin: 0 auto;
+                    width: 90%;
+                    padding-top: 10px;
+                    .table{
+            
+                        tbody{
+                            
+                            tr{
+                                .t1{
+                                    padding-left: 20px;
+                                    
+                                }
+                                .t2{
+                                    padding-left: 50px;
+                                }
+                                border-bottom: #dee2e6 solid 1px;
+                            }
+                        }
+                    }
+                }
+        }
+        .testimonial-section{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            position: relative;
+        
+            .container{
+                .owl-carousel{
+                   width: 100%;
+                   margin: 0 auto;
+                    .item{
+                        border: 1px solid rgba(112, 112, 112, .3);
+                        background-color: #FFFFFF;
+                        height: 600px;
+                        width: 335px;
+                       
+                        // padding: 5px;
+
+                      
+                        margin: 0 5px;
+
+                        text-align: center;
+                        .customer-voice{
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        p{
+                            padding:0px 30px;
+                            text-align: justify;
+                            text-justify: inter-word;
+                            line-height: 1.5rem;
+                            
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: url('../assets/images/testimonial-rec.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+            }
+            padding-bottom: 100px;
+        }
+    }
+    @media (min-width:320px) and (max-width:325px){
+        .meetTheTeam{
+            position: relative;
+            // margin-top: 129px;
+           
+            .path{
+                width: 100%;
+                position: absolute;
+                // z-index: -1;
+                top: 490px;
+            }
+            padding-bottom: 110px;
+        }
+        .modal{
+            .modal-body{
+                .row{
+                    .col-lg-6{
+                        .image{
+                            width: 280px;
+                            height: auto;
+                            padding: 20px;
+                            margin: 0 auto;
+                        }
+                        h2{
+                            padding-top: 50px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .aboutUs{
+            margin: 0;
+            margin-top: 10px;
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                       
+                        h2{
+                            padding-top: 28px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 150px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaime
+                    padding-bottom: 30px;
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 270px;
+                    margin: 0 auto;
+                    padding: 0px;
+                    display: block;
+                }
+        }
+
+        .aboutUs2{
+            margin: 0;
+           
+            position: relative;
+            .container{
+                margin: 0 auto;
+                .row{
+                    
+                    .col-lg-6 {
+                      
+                       
+                        h2{
+                            padding-top: 28px;
+                        }
+                        .ceo-t{
+                           display: block;
+                           margin: 0 auto;
+                           width: 150px;
+                        }
+                         
+                        }
+                        p{
+                            padding-top: 20px;
+                            
+                        }
+                        .ceo{
+                            margin-top: 100px;
+                            //02-19-2020 added padding-left. by: Chaimel
+                            padding-left: 50px;
+                            width: 400px;
+                            height: auto;
+                            display: none;
+                        }
+                        
+                    }
+                   
+                    
+                }
+                .h2-history{
+                    //02-19-2020 change the padding-top to 100 px. ny chaimel
+
+                    padding-bottom: 30px;
+                    padding-left: 15px; 
+                }
+                .office{
+                   display: none;
+                }
+                .opis{
+                   display: none;
+                }
+                .opis2{
+                    width: 270px;
+                    margin: 0 auto;
+                    padding: 0px;
+                    display: block;
+                }
+                .corp{
+                    padding-top: 10px;
+                    text-align: center;
+            
+                }
+                .container2{
+                    margin: 0 auto;
+                    width: 95%;
+                    padding-top: 10px;
+                    .table{
+            
+                        tbody{
+                            
+                            tr{
+                                .t1{
+                                    padding-left: 10px;
+                                    
+                                }
+                                .t2{
+                                    padding-left: 50px;
+                                }
+                                border-bottom: #dee2e6 solid 1px;
+                            }
+                        }
+                    }
+                }
+        }
+        .testimonial-section{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: auto;
+            position: relative;
+        
+            .container{
+                .owl-carousel{
+                   width: 100%;
+                   margin: 0 auto;
+                    .item{
+                        border: 1px solid rgba(112, 112, 112, .3);
+                        background-color: #FFFFFF;
+                        height: auto;
+                        width: 280px;
+                       
+                        // padding: 5px;
+
+                      
+                        margin: 0 5px;
+
+                        text-align: center;
+                        .customer-voice{
+                            padding: 20px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            img{
+                                width: 100px;
+                            }
+                        }
+                        p{
+                            padding:0px 30px;
+                            text-align: justify;
+                            text-justify: inter-word;
+                            line-height: 1.5rem;
+                            
+                            color: rgba(0, 0, 0, .8);
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: url('../assets/images/testimonial-rec.png');
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+            }
+            padding-bottom: 100px;
+        }
+    }
+    
+ 
+    
+    //MARK
+    @media only screen and (max-width: 769px) {
+     
+        .top-section{
+            .container-fluid{
+                padding: 10px;
+                text-align: center;
+                .row{
+                    .col-sm-12{
+                        h1{
+                            margin-top: 10px;
+                            // font-size: 2rem;
+                        }
+                        h2{
+                            font-size:1.5rem;
+                        }
+                        p{
+                            // line-height: 1.3;
+                        }
+                    }
+                }
+            }
+        }
+        .consultation-section{
+            padding: 0;
+            background:none;
+        }
+    }
+
+    //services 
+    @media (min-width:768px) and (max-width:1023px){
+        .section-head{
+            .sh_p{
+                font-size:1.9rem;
+            }
+        }
+        .services-new{
+            .newService{
+                .s_1{
+                    margin:0;
+                    padding:0;
+                    text-align: center;
+                    img{
+                        width:300px;
+                        height:auto;
+                    }
+                    h5{
+                        padding:20px 0;
+                        font-weight:700;
+                    }
+                    p{
+                        text-align:justify;
+                        padding-bottom:24.3px;
+                        margin:30px 20px;
+                    }
+                    .btn-orange{
+                        display:inline-block;
+                        margin-bottom:30px;
+                        background-color:#FFAC41;
+                        color:#FFFF;
+                        cursor: pointer;
+                        border-radius: 35px;
+                    }
+                }
+                .s_2{
+                    margin:0;
+                    padding:0;
+                    text-align: center;
+                    img{
+                        width:300px;
+                        height:auto;
+                    }
+                    h5{
+                        padding:20px 0;
+                        font-weight:700;
+                    }
+                    p{
+                        text-align:justify;
+                        margin:30px 20px;
+                    }
+                    .btn-orange{
+                        display:inline-block;
+                        margin-bottom:30px;
+                        background-color:#FFAC41;
+                        color:#FFFF;
+                        cursor: pointer;
+                        border-radius: 35px;
+                    }
+                }
+                .r_1{
+                    .btn-view{
+                        text-align: center;
+                        margin:0 auto;
+                        margin-bottom:50px;
+                        color:#FFFF;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
